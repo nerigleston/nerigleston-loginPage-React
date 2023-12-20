@@ -47,7 +47,7 @@ const Login = () => {
       }
 
       if (typeof login === 'function') {
-        console.log('User data received:', data);
+        console.log("Usuário Logado",'User data received:', data);
         login(data);
       }
 

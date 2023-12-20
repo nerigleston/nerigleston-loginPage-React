@@ -9,7 +9,7 @@ const LogoutButton = () => {
     try {
       await logout();
       navigate('/');
-      console.log('Logout feito')
+      console.log('Usuário deslogado')
     } catch (error) {
       console.error('Logout failed:', error.message);
     }

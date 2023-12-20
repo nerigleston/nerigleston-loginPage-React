@@ -67,8 +67,8 @@ const Cadastro = () => {
 
   return (
     <>
+      <Navbar />
       <div className="min-h-screen flex flex-col items-center justify-center bg-blue-400">
-        <Navbar />
         <div className="bg-white p-8 shadow-md rounded-md w-96 flex items-center flex-col">
           <div className='flex mb-7'>
             <img src={React} alt="" width={100} height={100} />

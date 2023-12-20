@@ -47,7 +47,7 @@ const Login = () => {
       }
 
       if (typeof login === 'function') {
-        console.log("Usuário Logado",'User data received:', data);
+        console.log("Usuário logado", data);
         login(data);
       }
 
@@ -64,8 +64,8 @@ const Login = () => {
 
   return (
     <>
+      <Navbar />
       <div className="min-h-screen flex items-center justify-center bg-blue-400 flex-col">
-        <Navbar />
         <div className="bg-white p-8 shadow-md rounded-md w-96 flex items-center flex-col">
           <div className='flex mb-7'>
             <img src={React} alt="" width={100} height={100} />

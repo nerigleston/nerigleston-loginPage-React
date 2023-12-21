@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import Go from "./../../assets/golang.webp";
 import React from "./../../assets/react.svg";
-import Navbar from '../../components/navBar';
+import NavBar1 from '../../components/navBar1';
 
 const Cadastro = () => {
   const [formData, setFormData] = useState({ name: '', email: '', age: 0, password: '' });
@@ -67,8 +67,8 @@ const Cadastro = () => {
 
   return (
     <>
-      <Navbar />
-      <div className="min-h-screen flex flex-col items-center justify-center bg-blue-400">
+      <NavBar1 />
+      <div className="min-h-screen flex flex-col items-center justify-center bg-blue-900">
         <div className="bg-white p-8 shadow-md rounded-md w-96 flex items-center flex-col">
           <div className='flex mb-7'>
             <img src={React} alt="" width={100} height={100} />
@@ -121,14 +121,14 @@ const Cadastro = () => {
             </div>
             <button
               type="button"
-              className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300 w-full"
+              className="bg-blue-900 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring focus:border-blue-500 w-full"
               onClick={handleSubmit}
               disabled={loading}
             >
               {loading ? 'Carregando...' : 'Cadastrar'}
             </button>
             <p className="mt-3 text-center">
-              Não tem uma conta? <Link to="/" className="text-blue-500">Login</Link>
+              Não tem uma conta? <Link to="/" className="text-blue-700">Login</Link>
             </p>
           </form>
         </div>

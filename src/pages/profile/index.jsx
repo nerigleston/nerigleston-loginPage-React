@@ -1,14 +1,14 @@
 import { useAuth } from "../../components/authContext";
 import LogoutButton from "../../components/logoutButton";
-import Navbar from "../../components/navBar";
+import NavBar1 from "../../components/navBar1";
 
 export default function Profile() {
   const { user, authenticated } = useAuth();
 
   return (
     <>
-      <Navbar />
-      <div className="min-h-screen bg-blue-400 text-white p-8 flex items-center justify-center flex-col">
+      <NavBar1 />
+      <div className="min-h-screen bg-blue-900 text-white p-8 flex items-center justify-center flex-col">
         <div className="max-w-md bg-white p-8 rounded shadow-lg">
           <h1 className="text-3xl font-bold mb-4 text-black flex justify-center">Profile</h1>
           {authenticated ? (

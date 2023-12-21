@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
-import Navbar from '../../components/navBar';
+// import Navbar from '../../components/navBar';
+import NavBar1 from '../../components/navBar1';
 
 const About = () => {
   return (
     <>
-      <Navbar />
-      <div className="min-h-screen flex items-center justify-center bg-blue-400 flex-col">
+      <NavBar1 />
+      <div className="min-h-screen flex items-center justify-center bg-blue-900 flex-col">
         <div className="bg-white p-8 shadow-md rounded-md flex items-center flex-col">
           <h2 className="text-2xl font-bold mb-4">Sobre o Projeto</h2>
           <p className="text-gray-700 mb-4">
@@ -26,7 +27,7 @@ const About = () => {
             O backend utiliza JWT para autenticação, e o frontend usa o contexto de autenticação para gerenciar o acesso a páginas privadas.
           </p>
           <p className="text-gray-700 mb-4">
-            Para começar, faça o <Link to="/cadastro" className="text-blue-500">cadastro</Link> ou <Link to="/" className="text-blue-500">login</Link>.
+            Para começar, faça o <Link to="/cadastro" className="text-blue-700">cadastro</Link> ou <Link to="/" className="text-blue-700">login</Link>.
           </p>
         </div>
       </div>

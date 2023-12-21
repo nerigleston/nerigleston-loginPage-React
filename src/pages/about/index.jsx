@@ -18,7 +18,7 @@ const About = () => {
             <li>Backend com Golang</li>
             <li>Banco de dados MongoDB</li>
             <li>Autenticação com JSON Web Tokens (JWT) no backend</li>
-            <li>Contexto de Autenticação (`AuthContext`) no frontend</li>
+            <li>Contexto de Autenticação (AuthContext) no frontend</li>
           </ul>
           <p className="text-gray-700 mb-4">
             Uma funcionalidade destacada é a capacidade do frontend de recuperar dados do usuário logado e exibi-los na página de perfil.
